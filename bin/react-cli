@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+const { resolve } = require("path");
+const program = require("commander");
+process.env.NODE_PATH = __dirname + "/../node_modules/";
+const res = command => resolve(__dirname, "../commands/", command);
+
+program.version(require("../package").version);
+
+program.usage("<command>");
+
+program
+  .command("init")
+  .option("-f, --foo", "enable some foo")
+  .description("Generate a new project")
+  .alias("i")
+  .action(() => {
+    require(res("init"));
+  });
+
+program.parse(process.argv);
+
+/**
+ * program.argv:node文件地址 项目地址 参数
+ * program.args:未定义参数
+ */
+
+if (!process.argv[2] || (process.argv[2] && program.args.length)) {
+  program.help();
+}

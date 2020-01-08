@@ -1,0 +1,10 @@
+{
+  "react-web": {
+    "place": "yangw5/react-web",
+    "branch": "react"
+  },
+  "react-ant-ts": {
+    "place": "yangw5/react-ant-ts",
+    "branch": "react-dev"
+  }
+}

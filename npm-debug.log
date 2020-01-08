@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v7.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\yang5\\myprojects\\react-project-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\yangw\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle react-young5-cli@1.0.1~prepublish: react-young5-cli@1.0.1
+11 silly lifecycle react-young5-cli@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\yangw\\AppData\\Roaming\\npm-cache\\react-young5-cli\\1.0.1\\package.tgz',
+12 verbose tar pack   'C:\\yang5\\myprojects\\react-project-cli' ]
+13 verbose tarball C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package.tgz
+14 verbose folder C:\yang5\myprojects\react-project-cli
+15 verbose addLocalTarball adding from inside cache C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package.tgz
+16 verbose correctMkdir C:\Users\yangw\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd react-young5-cli@1.0.1
+18 verbose afterAdd C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\yangw\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package\package.json written
+21 silly publish { name: 'react-young5-cli',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'react-cli',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   bin: { 'react-young5-cli': 'bin/react-cli' },
+21 silly publish   keywords: [ 'creat-react', 'react', 'cli' ],
+21 silly publish   author: { name: 'young5' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies:
+21 silly publish    { chalk: '^3.0.0',
+21 silly publish      commander: '^4.0.1',
+21 silly publish      'download-git-repo': '^3.0.2',
+21 silly publish      inquirer: '^7.0.1',
+21 silly publish      ora: '^4.0.3' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: 'react-young5-cli@1.0.1',
+21 silly publish   _shasum: 'b4b08748e48e668a307707eb2797c1f728f8ca9d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name react-young5-cli
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'react-young5-cli',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'react-young5-cli',
+26 silly mapToRegistry   name: 'react-young5-cli',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/react-young5-cli
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\yangw\AppData\Roaming\npm-cache\react-young5-cli\1.0.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/react-young5-cli
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 17:34:36
+33 verbose request id 1f2420d9b5ee7e91
+34 http request PUT https://registry.npmjs.org/react-young5-cli
+35 http 404 https://registry.npmjs.org/react-young5-cli
+36 verbose headers { date: 'Mon, 06 Jan 2020 09:34:38 GMT',
+36 verbose headers   'content-type': 'application/json',
+36 verbose headers   'content-length': '26',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'set-cookie': [ '__cfduid=d3d6e4b84d204e12780c97f3c463ee1f01578303278; expires=Wed, 05-Feb-20 09:34:38 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+36 verbose headers   'cf-ray': '550cb2848afce794-LAX',
+36 verbose headers   'cf-cache-status': 'DYNAMIC',
+36 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+36 verbose headers   vary: 'Accept-Encoding',
+36 verbose headers   server: 'cloudflare' }
+37 verbose request invalidating C:\Users\yangw\AppData\Roaming\npm-cache\registry.npmjs.org\react-young5-cli on PUT
+38 error publish Failed PUT 404
+39 verbose stack Error: User not found : react-young5-cli
+39 verbose stack     at makeError (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+39 verbose stack     at Request._callback (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+39 verbose stack     at Request.self.callback (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\request\request.js:187:22)
+39 verbose stack     at emitTwo (events.js:106:13)
+39 verbose stack     at Request.emit (events.js:191:7)
+39 verbose stack     at Request.<anonymous> (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\request\request.js:1044:10)
+39 verbose stack     at emitOne (events.js:96:13)
+39 verbose stack     at Request.emit (events.js:188:7)
+39 verbose stack     at IncomingMessage.<anonymous> (C:\Users\yangw\AppData\Roaming\nvm\v7.0.0\node_modules\npm\node_modules\request\request.js:965:12)
+40 verbose statusCode 404
+41 verbose pkgid react-young5-cli
+42 verbose cwd C:\yang5\myprojects\react-project-cli
+43 error Windows_NT 10.0.18362
+44 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error node v7.0.0
+46 error npm  v3.10.8
+47 error code E404
+48 error 404 User not found : react-young5-cli
+49 error 404
+50 error 404 'react-young5-cli' is not in the npm registry.
+51 error 404 You should bug the author to publish it (or use the name yourself!)
+52 error 404 Note that you can also install from a
+53 error 404 tarball, folder, http url, or git url.
+54 verbose exit [ 1, true ]
