@@ -8,6 +8,8 @@ react-young5-cli 是一个创建后台管理系统的 react 脚手架工具。
 
 [github 完整源码地址](https://github.com/yangw5/react-young5-cli)：https://github.com/yangw5/react-young5-cli 🔥🔥🔥
 
+注：npm 上的代码版本与 github 上保持一致。
+
 ## react-youngw-cli 的安装使用
 
 - npm 全局安装 react-youngw-cli
