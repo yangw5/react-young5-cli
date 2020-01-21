@@ -40,15 +40,15 @@ react-young5-cli 是一个创建后台管理系统的 react 脚手架工具。
 
 ## 代码目录
 
-        + --bin/                     --命令提示配置文件
+        + --bin/                            ---命令提示配置文件
         |    --- react-cli.js
-        + --commands/                -- 命令定义文件
-        |   --- init.js
-        + .gitignore                 ---git提交忽略文件
-        + .npmignore                 ---npm提交忽略文件
-        + .package.json              ---项目信息及相关依赖文件
-        + .templates.json            ---git 模板配置
-        + .README.md                 ---项目说明文件
+        + --commands/                       --- 命令定义文件
+        |    --- init.js
+        + .gitignore                        ---git提交忽略文件
+        + .npmignore                        ---npm提交忽略文件
+        + .package.json                     ---项目信息及相关依赖文件
+        + .templates.json                   ---git 模板配置
+        + .README.md                        ---项目说明文件
 
 ## 坑点
 
